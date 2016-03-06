@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="/assets/css/style.css"/>
+		<title>{% block title %}{% endblock title %}</title>
+	</head>
+    <body>
+    <header ID="header">Forenzicna stran</header>
+     <div>
+     <ul>
+         <a href="/"><button class="myButton" id="button1">Vstopna stran</button></a>
+         <a href="/rezultat"><button class="myButton">Forenzicni generator</button></a>
+    </ul>
+    </div>
+    {% block specifika %}{% endblock specifika %}
+    </body>
+<html>

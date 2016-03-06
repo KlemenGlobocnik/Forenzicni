@@ -1,0 +1,12 @@
+{% extends "baseforen.html" %}
+
+{% block title %}Domov{% endblock title %}
+
+{% block specifika %}
+   <form action="/rezultat" method="post">
+                    <h2>Vnesi DNK</h2>
+                    <textarea name="vnosA"></textarea>
+                    <button class="myButton" type="submit">Izracunaj rezultat analize DNK</button>
+            </form>
+<h3>{{forenzicni}}</h3>
+{% endblock specifika %}
