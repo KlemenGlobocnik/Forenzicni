@@ -55,8 +55,8 @@ class RezultatHandler(BaseHandler):
         return self.render_template("rezultat.html")
 
     def post(self):
-        a = self.request.get("vnosA")
-        params = {"forenzicni": forenzicni(a)}
+        DNKvnos = self.request.get("DNK")
+        params = {"forenzicni": forenzicni(DNKvnos)}
         return self.render_template("rezultat.html", params=params)
 
 app = webapp2.WSGIApplication([
